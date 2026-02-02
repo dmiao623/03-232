@@ -1,0 +1,109 @@
+\documentclass{article}
+\input{preamble}
+
+\begin{document}
+\maketitle
+
+
+\ZS{Task 1}
+  \BV{
+    \item 
+      See Figure \ref{fig:1a}
+      \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.60\textwidth]{fig1a.png}
+        \label{fig:1a}
+        \caption{Asp-Lys species across protonation states}
+      \end{figure}
+
+    \item
+      See Figure \ref{fig:1b}
+      \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.40\textwidth]{fig1b.png}
+        \label{fig:1b}
+        \caption{Titration curve for Asp-Lys}
+      \end{figure}
+
+    \item
+      C terminus: $\text{pH}=4>\text{p}K_a=2$, so net charge is $-1$ \\
+      Asp side chain: $\text{pH}=4=\text{p}K_a=4$, so net charge is $-0.5$ \\
+      N terminus chain: $\text{pH}=4<\text{p}K_a=9$, so net charge is $+1$ \\
+      Lys side chain: $\text{pH}=4<\text{p}K_a=11$, so net charge is $+1$ \\
+      avg. net charge: (+1) + (+1) + (-1) + (-0.5) = \boxed{0.5}
+
+    \item
+      C terminus: $\text{pH}=7>\text{p}K_a=2$, so net charge is $-1$ \\
+      Asp side chain: $\text{pH}=7>\text{p}K_a=4$, so net charge is $-1$ \\
+      N terminus chain: $\text{pH}=7<\text{p}K_a=9$, so net charge is $+1$ \\
+      Lys side chain: $\text{pH}=7<\text{p}K_a=11$, so net charge is $+1$ \\
+      avg. net charge: (+1) + (+1) + (-1) + (-1) = \boxed{0}
+
+    \item
+      C terminus: $\text{pH}=9<\text{p}K_a=2$, so net charge is $-1$ \\
+      Asp side chain: $\text{pH}=9<\text{p}K_a=4$, so net charge is $-1$ \\
+      N terminus chain: $\text{pH}=9=\text{p}K_a=9$, so net charge is $+0.5$ \\
+      Lys side chain: $\text{pH}=9>\text{p}K_a=11$, so net charge is $+1$ \\
+      avg. net charge: (-1) + (-0.5) + (+1) + (+1) = \boxed{-0.5}
+
+    \item
+      The net $0$ species occurs between p$K_a$ that bracket the neutral form:
+      \BE{
+        \text{p}I\approx (4+9)/2=\boxed{6.5}
+      }
+  }
+
+\ZS{Task 2}
+  \BV{
+    \item
+      $0.02\;\mathrm{mol/L}\cdot 0.500\;\mathrm{L} = \boxed{0.010\;\mathrm{mol}}$
+
+    \item
+      Use the base, since HEPES starts in the most acidic form $\mathrm{H}_2\mathrm{A}$. 
+
+    \item
+      At $\mathrm{pH}=7.1$, the equilibrium that is relevant is the second dissocation between $\mathrm{HA}^-$ and $\mathrm{A}^{2-}$. Using Henderson-Hasselbalch,
+      \BE{
+        \f{[\mathrm{A}^{2-}]}{[\mathrm{HA}^-]}=10^{7.1-7.5}\approx 0.398.
+      }
+      Because there are a total of $0.010$ moles, so the number of moles of $\mathrm{A}^{2-}$ is $0.00285$ and the number of moles of $\mathrm{HA}^-$ is $0.00715$. It takes two moles of $\mathrm{OH}^-$ to make the former, and one mole for the latter. Then, we can take a weighted average:
+      \BE{
+        \mathrm{moles\;of\;OH}^-=1\cdot 0.00715 + 2\cdot 0.00285 = 0.01285\;\mathrm{mol}.
+      }
+      Because $[\text{KOH}]=1\mathrm{ M}$, this is equivalent to $\boxed{12.85\;\mathrm{mL}}$ of KOH.
+  } 
+
+\ZS{Task 3}
+  \BV{
+    \item
+      At $\mathrm{pH}=7.1$, the buffer has $7.15\;\mathrm{mmol}$ of $\mathrm{HA}^-$ and $2.85\;\mathrm{mmol}$ of $\mathrm{A}^{2-}$. Adding base converts the protonated form to the unprotonated form, so there will be $7.10\;\mathrm{mmol}$ and $2.90\;\mathrm{mmol}$ of each, respectively. Appyling Henderson-Hasselbalch gives
+      \BE{
+        \mathrm{pH}=7.5+\log(2.90/7.10)\approx\boxed{7.11}
+      }
+
+    \item
+      The $\mathrm{pH}$ only changed by $0.01$, a relatively insignificant change.
+
+    \item
+      The KOH dissocatiates completely, so $[\mathrm{OH}^-]=5\cdot 10^5\;\mathrm{mol}/0.50\;\mathrm{L}=10\cdot 10^-4\;\mathrm{M}$. Taking the negative log gives a $\mathrm{pH}$ of $\boxed{10.00}$.
+  }
+  
+
+\ZS{Task 4}
+  \BV{
+    \item
+      We have
+      \BE{
+        \varepsilon_\text{protein}=3\varepsilon(\text{Trp})+3\varepsilon(\text{Tyr})=15150+4470=19620\;\mathrm{M}^{-1}\mathrm{cm}^{-1}.
+      }
+      Then,
+      \BE{
+        c=\f{A}{\epsilon\ell}=\boxed{5.61\cdot 10^{-5}\;\mathrm{M}}.
+      }
+
+    \item
+      There are $cV=(5.61\cdot 10^-5)(1.0\cdot 10^-3)=5.61\cdot 10^{-8}$ moles of the protein. Then, the mass is $(5.61\cdot10^-8)(20000)=\boxed{1.12\cdot 10^-3\;\mathrm{g}}$.
+  }
+
+  
+\end{document}
